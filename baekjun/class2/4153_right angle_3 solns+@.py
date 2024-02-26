@@ -33,7 +33,8 @@ while (case := input()) != '0 0 0':
 
 # 사실 넣을 생각 없었는데 commit msg에 3 solns라 적는 바람에... commit msg만 수정하는 법을 몰라 걍 무식하게 sol을 추가함.
 # do-while에서 while로 바꿈. -> 종료 조건이 명확해져 가독성이 좋아짐.
-# map 자체도 iterable하고 index 참조가 되는 자료형이기에 굳이 list로 형변환 하지 않아도 됨
+# map 자체도 iterable하고 sorted()에 넣을 경우 list로 반환되어 굳이 list(map).sort로 할 필요없이 sorted(map) 해주면 됨.
+# map은 index 참조가 안 됨!! range가 index 참조가 된다. 헷갈리기 xxxx
 # <iterable>.sort()는 오직 list만을 받기에 sorted()로 정렬해줌
 
 # sort() vs sorted()
